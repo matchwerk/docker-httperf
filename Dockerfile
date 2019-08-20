@@ -14,6 +14,7 @@ RUN apt-get update \
 RUN cd /opt \
     && git clone https://github.com/httperf/httperf.git \
     && cd httperf \
+    && git checkout ef592127909b6583476b34bfac66b7a40b8cb7ae \
     && autoreconf -i \
     && ./configure \
     && make \
